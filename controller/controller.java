@@ -2,7 +2,7 @@ import java.sql.*;
 
 public class MySQLConnection {
     public static void main(String[] args) {
-        String host = "jdbc:mysql://localhost:3306/mydatabase";
+        String host = "jdbc:mysql://localhost:3306/testDatabase";
         String username = "testUser";
         String password = "testPass";
         
