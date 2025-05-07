@@ -4,7 +4,7 @@
 
 //if you want persistant data on your host, `mkdir mysqlDocker` in the directory you want this container to run `cd mysqlDocker`
 
-//build and run via `docker run --name mysql-container -d -p 3306:3306 -v /home/{path where you want the db of the container to be}:/var/lib/mysql {imageName}` 
+//build and run via `docker run --name mysql-container -d -p 3306:3306 -v /home/{path where you want the db of the container to be}:/var/lib/mysql -e MYSQL_ROOT_PASSWORD={yourPassword} {imageName}` 
 
 
 //then create a bash shell on the container by using `docker exec -it {container id} /bin/bash`
